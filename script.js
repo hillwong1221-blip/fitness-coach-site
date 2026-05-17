@@ -212,10 +212,10 @@ const textTranslations = {
     "Browse by Topic": "按主題瀏覽",
     "Training performance content": "運動表現內容",
     "Movement analysis content": "動作分析內容",
-    "運動表現": "運動表現",
-    "發力調整": "發力調整",
-    "傷後重建動作模式": "傷後重建動作模式",
-    "其他": "其他",
+    "Athletic Performance": "運動表現",
+    "Force Production": "發力調整",
+    "Post-Injury Movement Rebuild": "傷後重建動作模式",
+    "Other": "其他",
     "如何建立更穩定的加速、跳躍與變向能力": "如何建立更穩定的加速、跳躍與變向能力",
     "by Coach Hill": "by Hill 教練",
     "運動表現不是只看重量或爆發力，還要看動作節奏、身體控制、力量傳遞和疲勞下的穩定性。這篇文章拆解訓練設計的基本框架。": "運動表現不是只看重量或爆發力，還要看動作節奏、身體控制、力量傳遞和疲勞下的穩定性。這篇文章拆解訓練設計的基本框架。",
@@ -531,6 +531,7 @@ function translateTextNodes(root, lang) {
       if (!parent || ["SCRIPT", "STYLE", "TEXTAREA"].includes(parent.tagName)) {
         return NodeFilter.FILTER_REJECT;
       }
+      if (parent.closest(".lang-zh, .lang-en")) return NodeFilter.FILTER_REJECT;
       return NodeFilter.FILTER_ACCEPT;
     }
   });
