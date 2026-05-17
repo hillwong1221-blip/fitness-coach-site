@@ -565,10 +565,20 @@ function setTitle(lang) {
   }
 }
 
+function applyLangBlocks(lang) {
+  document.querySelectorAll(".lang-zh").forEach((el) => {
+    el.style.display = lang === "zh" ? "" : "none";
+  });
+  document.querySelectorAll(".lang-en").forEach((el) => {
+    el.style.display = lang === "en" ? "" : "none";
+  });
+}
+
 function applyLanguage(lang) {
   document.documentElement.lang = lang === "zh" ? "zh-TW" : "en";
   translateTextNodes(document.body, lang);
   translateAttributes(lang);
+  applyLangBlocks(lang);
   setTitle(lang);
   localStorage.setItem("siteLanguage", lang);
 
