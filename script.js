@@ -599,8 +599,20 @@ function addLanguageSwitcher() {
   });
 }
 
+function setActiveNavLink() {
+  const page = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".nav-links a[href]").forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href === page || (page === "" && href === "index.html")) {
+      link.classList.add("nav-active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   addLanguageSwitcher();
+  setActiveNavLink();
 
   const toggle = document.querySelector("[data-menu-toggle]");
   const links = document.querySelector("[data-nav-links]");

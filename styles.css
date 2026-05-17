@@ -71,6 +71,17 @@ a { color: inherit; text-decoration: none; }
   color: #475467;
 }
 .nav-links a:hover { color: var(--navy); }
+.nav-links a.nav-active { color: var(--navy); position: relative; }
+.nav-links a.nav-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
 .content-nav {
   position: relative;
   display: flex;
@@ -448,6 +459,44 @@ h3 { font-size: 22px; }
   color: #fff;
   border-color: rgba(255,255,255,0.24);
 }
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.program-grid .program-card { height: 100%; display: flex; flex-direction: column; }
+.program-grid .program-card .btn { margin-top: auto; }
+
+.compare-table { overflow-x: auto; }
+.compare-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.compare-table th, .compare-table td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+.compare-table th:first-child, .compare-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: var(--ink);
+}
+.compare-table thead th {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+}
+.compare-table thead th:first-child { border-radius: 8px 0 0 0; }
+.compare-table thead th:last-child { border-radius: 0 8px 0 0; }
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:nth-child(even) { background: var(--soft); }
+.compare-table .check { color: var(--green); font-weight: 900; }
+.compare-table .dash { color: #cbd5e1; }
+
 .contact-form {
   display: grid;
   gap: 16px;
