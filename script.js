@@ -612,6 +612,8 @@ function addLanguageSwitcher() {
 
 function setActiveNavLink() {
   const page = window.location.pathname.split("/").pop() || "index.html";
+  const contentPages = ["resources.html", "article-shoulder.html", "article-squat.html", "article-highjump.html"];
+
   document.querySelectorAll(".nav-links a[href]").forEach((link) => {
     const href = link.getAttribute("href");
     if (href === page || (page === "" && href === "index.html")) {
@@ -619,6 +621,12 @@ function setActiveNavLink() {
       link.setAttribute("aria-current", "page");
     }
   });
+
+  // Highlight the Contents nav item on resource & article pages
+  const contentNav = document.querySelector(".content-nav");
+  if (contentNav && contentPages.includes(page)) {
+    contentNav.classList.add("nav-active");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
