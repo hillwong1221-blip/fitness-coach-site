@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contents | Coach Hill</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+  <meta name="description" content="訓練觀念、動作策略和重建思路。內容以實用、可執行、可回到訓練場景為核心。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>Coach Hill</span></a><button class="menu-toggle" data-menu-toggle>☰</button><nav class="nav-links" data-nav-links><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="results.html">Results</a><div class="content-nav"><a href="resources.html">Contents</a><div class="content-dropdown"><div class="content-dropdown-inner"><div><h4>Blog</h4><a href="resources.html">All articles</a><a href="resources.html#performance">運動表現</a><a href="resources.html#force">發力調整</a><a href="resources.html#rebuild">傷後重建動作模式</a><a href="resources.html#other">其他</a></div></div></div></div><a href="faq.html">FAQ</a><a class="btn btn-primary" href="contact.html">Book a Call</a></nav></div></header>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Coach Hill</span></a>
+      <button class="menu-toggle" data-menu-toggle aria-label="Open menu">☰</button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="results.html">Results</a>
+        <div class="content-nav">
+          <a href="resources.html">Contents</a>
+          <div class="content-dropdown">
+            <div class="content-dropdown-inner">
+              <div>
+                <h4>Blog</h4>
+                <a href="resources.html">All articles</a>
+                <a href="resources.html#performance">運動表現</a>
+                <a href="resources.html#force">發力調整</a>
+                <a href="resources.html#rebuild">傷後重建動作模式</a>
+                <a href="resources.html#other">其他</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="faq.html">FAQ</a>
+        <a class="btn btn-primary" href="contact.html">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
+    <!-- Hero -->
     <section class="contents-hero">
       <div class="container">
         <span class="eyebrow">Contents</span>
@@ -17,6 +51,7 @@
       </div>
     </section>
 
+    <!-- Dark nav menu -->
     <section class="contents-menu-section">
       <div class="container contents-menu-grid">
         <div>
@@ -38,32 +73,127 @@
       </div>
     </section>
 
+    <!-- Article listing -->
     <section class="section contents-list">
       <div class="container">
-        <article id="performance" class="featured-article">
-          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Athlete training for performance">
+
+        <!-- Featured: Shoulder article -->
+        <article id="rebuild" class="featured-article">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Volleyball athlete shoulder training">
           <div>
-            <span class="tag">運動表現</span>
-            <h2>如何建立更穩定的加速、跳躍與變向能力</h2>
-            <p class="muted">by Coach Hill</p>
-            <p>運動表現不是只看重量或爆發力，還要看動作節奏、身體控制、力量傳遞和疲勞下的穩定性。這篇文章拆解訓練設計的基本框架。</p>
-            <a class="btn btn-primary" href="#">Read this article</a>
+            <span class="tag">傷後重建動作模式</span>
+            <span class="tag" style="background:#1e3a5f;color:#93c5fd;margin-left:6px;">Case Study</span>
+            <h2 style="margin-top:14px;">肩膀不舒服 ≠ 肩膀夾擠症</h2>
+            <p class="muted">by Coach Hill &nbsp;·&nbsp; 8 min read</p>
+            <p>肩膀不適不一定是夾擠症。透過 CAK 臨床肌動學系統評估，從排球選手的案例看如何找出動作控制的真正問題，重建肩膀穩定性與運動表現。</p>
+            <a class="btn btn-primary" href="article-shoulder.html">Read this article</a>
           </div>
         </article>
 
+        <!-- Article grid -->
         <div class="article-grid">
-          <article id="force" class="blog-card"><span class="tag">發力調整</span><h3>為什麼你有力量，卻用不出來？</h3><p class="muted">從呼吸、軀幹張力、髖膝踝連動來看發力順序。</p><p><strong>6 min read</strong></p><a class="btn btn-ghost" href="#">Read More</a></article>
-          <article class="blog-card"><span class="tag">發力調整</span><h3>深蹲卡住時，不一定是腿不夠強</h3><p class="muted">分析重心、腳掌壓力、髖部控制與上背張力。</p><p><strong>5 min read</strong></p><a class="btn btn-ghost" href="#">Read More</a></article>
-          <article id="rebuild" class="blog-card"><span class="tag">傷後重建動作模式</span><h3>傷後回到訓練前，先重建這三種控制能力</h3><p class="muted">疼痛降低不代表動作模式已經恢復，重建需要分層。</p><p><strong>7 min read</strong></p><a class="btn btn-ghost" href="#">Read More</a></article>
-          <article class="blog-card"><span class="tag">傷後重建動作模式</span><h3>肩膀不穩時，如何重新建立推拉動作</h3><p class="muted">從肩胛控制、肋骨位置和負荷管理開始。</p><p><strong>6 min read</strong></p><a class="btn btn-ghost" href="#">Read More</a></article>
-          <article class="blog-card"><span class="tag">運動表現</span><h3>速度訓練不是跑更累，而是跑得更有效率</h3><p class="muted">用簡單指標檢查步頻、接觸時間和力量方向。</p><p><strong>4 min read</strong></p><a class="btn btn-ghost" href="#">Read More</a></article>
-          <article id="other" class="blog-card"><span class="tag">其他</span><h3>忙碌時如何維持最低有效訓練量</h3><p class="muted">當時間有限，保留最重要的訓練刺激和恢復節奏。</p><p><strong>5 min read</strong></p><a class="btn btn-ghost" href="#">Read More</a></article>
+
+          <!-- 發力調整 -->
+          <article id="force" class="blog-card">
+            <span class="tag">發力調整</span>
+            <span class="tag" style="background:#1e3a5f;color:#93c5fd;margin-left:6px;margin-top:6px;">Guide</span>
+            <h3 style="margin-top:12px;">深蹲為什麼會歪斜？</h3>
+            <p class="muted">骨盆偏移來自三層失調：腳掌壓力、髖部控制、軀幹穩定性。從根本拆解並系統化改善。</p>
+            <p><strong>7 min read</strong></p>
+            <a class="btn btn-ghost" href="article-squat.html">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <span class="tag">傷後重建動作模式</span>
+            <span class="tag" style="background:#1e3a5f;color:#93c5fd;margin-left:6px;margin-top:6px;">Case Study</span>
+            <h3 style="margin-top:12px;">跳高選手的腰痛之謎</h3>
+            <p class="muted">腰痛反覆出現不是腰方肌問題，而是骨盆穩定性丟失。從跳高選手案例看如何從根本重建。</p>
+            <p><strong>9 min read</strong></p>
+            <a class="btn btn-ghost" href="article-highjump.html">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <span class="tag">發力調整</span>
+            <h3 style="margin-top:12px;">為什麼你有力量，卻用不出來？</h3>
+            <p class="muted">從呼吸、軀幹張力、髖膝踝連動來看發力順序。</p>
+            <p><strong>6 min read</strong></p>
+            <a class="btn btn-ghost" href="#">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <span class="tag">發力調整</span>
+            <h3 style="margin-top:12px;">深蹲卡住時，不一定是腿不夠強</h3>
+            <p class="muted">分析重心、腳掌壓力、髖部控制與上背張力。</p>
+            <p><strong>5 min read</strong></p>
+            <a class="btn btn-ghost" href="#">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <span class="tag">傷後重建動作模式</span>
+            <h3 style="margin-top:12px;">傷後回到訓練前，先重建這三種控制能力</h3>
+            <p class="muted">疼痛降低不代表動作模式已經恢復，重建需要分層。</p>
+            <p><strong>7 min read</strong></p>
+            <a class="btn btn-ghost" href="#">Read More</a>
+          </article>
+
+          <article id="performance" class="blog-card">
+            <span class="tag">運動表現</span>
+            <h3 style="margin-top:12px;">速度訓練不是跑更累，而是跑得更有效率</h3>
+            <p class="muted">用簡單指標檢查步頻、接觸時間和力量方向。</p>
+            <p><strong>4 min read</strong></p>
+            <a class="btn btn-ghost" href="#">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <span class="tag">運動表現</span>
+            <h3 style="margin-top:12px;">如何建立更穩定的加速、跳躍與變向能力</h3>
+            <p class="muted">運動表現不只看重量，還要看動作節奏、身體控制與力量傳遞。</p>
+            <p><strong>6 min read</strong></p>
+            <a class="btn btn-ghost" href="#">Read More</a>
+          </article>
+
+          <article id="other" class="blog-card">
+            <span class="tag">其他</span>
+            <h3 style="margin-top:12px;">忙碌時如何維持最低有效訓練量</h3>
+            <p class="muted">當時間有限，保留最重要的訓練刺激和恢復節奏。</p>
+            <p><strong>5 min read</strong></p>
+            <a class="btn btn-ghost" href="#">Read More</a>
+          </article>
+
+          <article class="blog-card">
+            <span class="tag">其他</span>
+            <h3 style="margin-top:12px;">為什麼動力總是失效，以及應該用什麼取代</h3>
+            <p class="muted">系統、身份認同和問責如何降低決策疲勞。</p>
+            <p><strong>5 min read</strong></p>
+            <a class="btn btn-ghost" href="#">Read More</a>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="section section-soft"><div class="container"><div class="cta-band"><div><h2>Want a plan built for you?</h2><p>Articles help, but coaching gives you feedback, context, and accountability.</p></div><a class="btn btn-primary" href="contact.html">Apply for Coaching</a></div></div></section>
+    <section class="section section-soft">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Want a plan built for you?</h2>
+            <p>Articles help, but coaching gives you feedback, context, and accountability.</p>
+          </div>
+          <a class="btn btn-primary" href="contact.html">Apply for Coaching</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-grid"><div><h4>Coach Hill</h4><p>Personalized online coaching for busy people who want structure, accountability, and real progress.</p></div><div><h4>Pages</h4><a href="about.html">About</a><a href="programs.html">Programs</a><a href="results.html">Results</a><a href="resources.html">Contents</a></div><div><h4>Contact</h4><a href="mailto:hillwong1221@gmail.com">hillwong1221@gmail.com</a><a href="contact.html">Apply for coaching</a><a href="#">Instagram</a></div><div><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms</a><p>台北市大安區信義路二段28號</p></div></div><div class="container copyright">© 2026 Coach Hill. All rights reserved.</div></footer><script src="script.js"></script>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h4>Coach Hill</h4><p>Personalized online coaching for busy people who want structure, accountability, and real progress.</p></div>
+      <div><h4>Pages</h4><a href="about.html">About</a><a href="programs.html">Programs</a><a href="results.html">Results</a><a href="resources.html">Contents</a></div>
+      <div><h4>Contact</h4><a href="mailto:hillwong1221@gmail.com">hillwong1221@gmail.com</a><a href="contact.html">Apply for coaching</a><a href="#">Instagram</a></div>
+      <div><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms</a><p>台北市大安區信義路二段28號</p></div>
+    </div>
+    <div class="container copyright">© 2026 Coach Hill. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
